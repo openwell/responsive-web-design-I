@@ -1,3 +1,361 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+  padding: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+header {
+  padding: 10px;
+  /* margin: 0 auto; */
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.nav {
+  flex: 0 1 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(195, 205, 214);
+  text-align: center;
+}
+.nav li {
+  flex: 0 1 80px;
+  padding: 20px;
+}
+.nav li:hover {
+  color: black;
+  background-color: beige;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.logo_wrapper {
+  flex: 0 1 200px;
+  padding: 20px;
+}
+.logo_wrapper img {
+  width: inherit;
+}
+a:active,
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(195, 205, 214);
+}
+
+/* section 1 */
+.main_section {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main_section-text {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+  padding-right: 40px;
+  margin-top: 80px;
+}
+.main_section-text h1 {
+  font-size: 80px;
+}
+.main_section-text button {
+  padding: 5px 30px;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.main_section-text button:hover {
+  background-color: rgb(66, 66, 233);
+  cursor: pointer;
+}
+.main_section-image {
+  flex: 1;
+  margin: 10px;
+  padding-right: 30px;
+}
+.main_section-image img {
+  width: 100%;
+  margin-right: 0px;
+}
+
+/* section 2 */
+.feature_section {
+  width: 100%;
+}
+.section_two_sub1 {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.section_two_sub1-features {
+  margin-right: 20px;
+}
+.section_two_sub1-features,
+.section_two_sub1-about {
+  flex: 0 1 calc(98% / 2);
+  text-align: justify;
+  margin-top: 20px;
+}
+.section_two_sub2 {
+  width: 100%;
+  margin: 20px 0;
+}
+.section_two_sub2 img {
+  width: 100%;
+  height: auto;
+}
+.section_two_sub3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.section_two_sub3-service,
+.section_two_sub3-product,
+.section_two_sub3-visions {
+  flex: 0 1 calc(96% / 3);
+  text-align: justify;
+  margin-top: 20px;
+}
+.section_two_sub3-service,
+.section_two_sub3-product {
+  margin-right: 20px;
+}
+hr {
+  margin: 20px 0;
+  border: 0.5px solid black;
+}
+
+/* footer */
+footer {
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+footer div:nth-of-type(1) p {
+  margin: 10px 0;
+}
+footer div:nth-of-type(2) {
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .main_section-image {
+    display: none;
+  }
+  nav {
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
+  .main_section-text {
+    padding-right: 0px;
+  }
+  .section_two_sub1-features,
+  .section_two_sub1-about {
+    flex: 1;
+    text-align: justify;
+    margin-top: 20px;
+  }
+  .section_two_sub3-service,
+  .section_two_sub3-product,
+  .section_two_sub3-visions {
+    flex: 1;
+    text-align: justify;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .nav li {
+    font-size: 10px;
+  }
+  .nav {
+    flex-direction: column;
+  }
+  .nav li {
+    flex: 1;
+    border-bottom: 1px solid black;
+    width: 100%;
+  }
+  .main_section-text {
+    margin-top: 40px;
+  }
+  .main_section-text h1 {
+    font-size: 50px;
+}
+  .nav li:hover {
+    border-radius: 0px;
+  }
+  .nav li:nth-of-type(1) {
+    border-top: 1px solid black;
+  }
+  .section_two_sub1 {
+    flex-direction: column;
+  }
+  .section_two_sub1-features {
+    margin-right: 0px;
+  }
+  .section_two_sub3 {
+    flex-direction: column;
+  }
+  .section_two_sub3-service,
+  .section_two_sub3-product {
+    margin-right: 0px;
+  }
+}
